@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <title>Party Invitation</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <script src='a.js'></script>
+    <style>
+        body,h1,h2 {
+            font-family: "Raleway", sans-serif;
+        }
+
+        body,html {
+            height: 100%;
+        }
+        p {
+            font-size: 18px;
+            font-family: "Raleway";
+        }
+        .bgimg,.bgimg2 {
+            min-height: 100%;
+            background-position: center;
+            background-size: cover;
+        }
+        .bgimg {
+            background-image: url("E:/fpt1.jpg");
+        }
+        .bgimg2 {
+            background-image: url("E:/fpt3.jpg");
+        }
+        #us,.img_infor {
+            display: flex;
+        }
+        .us{
+            width: 33%;
+        }
+        .color{
+            background-color: #615749;
+            color: white;
+        }
+        .btncolor{
+            background-color: #EB8E00;
+            color: white;
+        }
+        table tr td p{
+            padding-
+        }
+    </style>
+
+    <body>
+
+        <!-- Header / Home-->
+        <header class="w3-display-container w3-wide bgimg" id="home">
+            <div class="w3-display-middle w3-text-white w3-center">
+                <h1 class="w3-jumbo">F-CAMP</h1>
+                <h2>FPT University</h2>
+                <h2><b>11/2/2011 at Hoa Lac</b></h2>
+            </div>
+        </header>
+
+        <!-- Navbar (sticky bottom) -->
+        <div class="w3-bottom w3-hide-small">
+            <div class="w3-bar w3-orange w3-text-white w3-center w3-padding w3-opacity-min w3-hover-opacity-off">
+                <a href="#home" style="width:25%" class="w3-bar-item w3-button">Home</a>
+                <a href="#us" style="width:25%" class="w3-bar-item w3-button">Activities</a>
+                <a href="#wedding" style="width:25%" class="w3-bar-item w3-button">Detail</a>
+                <a href="#rsvp" style="width:25%" class="w3-bar-item w3-button w3-hover-black">Register</a>
+            </div>
+        </div>
+
+        <!-- About / Jane And John -->
+        <div class="color" id="us">
+            <img src="E:\fpt5.jpg" alt style="width: 100%;height: 1080px;">   
+        </div>
+
+        <!-- Background photo -->
+        <div class="w3-display-container bgimg2">
+            <div class="w3-display-middle w3-text-white w3-center">
+                <h1 class="w3-jumbo">You Are Invited</h1><br>
+                <h2>Of course..</h2>
+            </div>
+        </div>
+
+        <!-- Party information -->
+        <div class="w3-container w3-padding-64 color w3-grayscale-min w3-center" id="wedding">
+            <div class="w3-content">
+                <h1 class="w3-text-orange"><b>THE PARTY</b></h1>
+                <div class="img_infor">
+                    <div class="w3-content">
+                        <img class="w3-round-large w3-grayscale-min" src="E:\fpt4.jpg"
+                             style="width:100%;margin:64px 0">
+                    </div>
+                </div>
+                <div class="w3-row">
+                    <div class="w3-half">
+                        <h2>When</h2>
+                        <p>12/11/2012</p>
+                        <p>8.30 AM</p>
+                    </div>
+                    <div class="w3-half">
+                        <h2>Where</h2>
+                        <p>FPT University</p>
+                        <p>Hoa Lac</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- RSVP section -->
+        <div class="w3-container w3-padding-64 color w3-center w3-wide" id="rsvp">
+            <h1>HOPE YOU JOIN!</h1>
+            <p class="w3-large">from FPT University</p>
+            <p class="w3-xlarge">
+                <button onclick="document.getElementById('id01').style.display = 'block'"
+                        class="w3-button w3-round btncolor w3-opacity w3-hover-opacity-off" style="padding:8px 60px;">JOIN</button>
+            </p>
+        </div>
+
+        <!-- RSVP modal -->
+        <div id="id01" class="w3-modal">
+            <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="padding:32px;max-width:600px">
+                <div class="w3-container w3-white w3-center">
+                    <h1 class="w3-wide">DO YOU WANT TO JOIN WITH US??</h1>
+                    <p>We really hope you can come.</p>
+                    <form>
+                        <input class="w3-input w3-border" type="text" placeholder="Enter your name" name="name">
+                    </form><br>
+                    <div class="w3-row">
+                        <div class="w3-half">
+                            <button onclick="document.getElementById('id01').style.display = 'none'" type="button"
+                                    class="w3-button w3-block w3-green">Sure</button>
+                        </div>
+                        <div class="w3-half">
+                            <button onclick="document.getElementById('id01').style.display = 'none'" type="button"
+                                    class="w3-button w3-block w3-red">No, I'm busy</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="w3-center w3-black w3-padding-16">
+            <p>Create by Minh</p>
+        </footer>
+        <div class="w3-hide-small w3-black" style="margin-bottom:32px"> </div>
+
+    </body>
+
+</html>
